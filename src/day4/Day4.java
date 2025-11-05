@@ -74,6 +74,51 @@ public class Day4 {
 
 
 
+//        Random rand = new Random();
+//        int[][] matrix = new int[12][8];
+//        int[] totalElemArray = new int[12];
+//        int temp = 0;
+//
+//        for(int i=0; i<matrix.length; i++){
+//            for(int j=0; j<matrix[i].length; j++){
+//                matrix[i][j] = rand.nextInt(50);
+//                temp += matrix[i][j];
+//            }
+//            totalElemArray[i] = temp;
+//            temp = 0;
+//        }
+//        int maxElemIndex = 0;
+//        int elem = totalElemArray[0];
+//        for(int i=0; i<totalElemArray.length; i++){
+//            if (totalElemArray[i] > elem) {
+//                elem = totalElemArray[i];
+//                maxElemIndex = i;
+//            }
+//        };
+//        System.out.println(Arrays.toString(totalElemArray));
+//        System.out.printf("The maximum number is %d", maxElemIndex);
+
+
+
+        int[] numbers = new int[100];
+        Random random = new Random();
+
+        for(int i=0; i<numbers.length; i++){
+            numbers[i] = random.nextInt(0, 10000);
+        };
+
+        int maxSum = 0;
+        int maxIndex = 0;
+
+        for(int i=0; i<numbers.length-2; i++){
+            int sum = numbers[i] + numbers[i+1] + numbers[i+2];
+            if(sum > maxSum){
+                maxSum = sum;
+                maxIndex = i;
+            }
+        }
+        System.out.printf("Maximum sum: %d, Maximum index: %d", maxSum, maxIndex);
+
 
     }
 }
