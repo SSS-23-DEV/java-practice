@@ -30,19 +30,18 @@ public class Teacher {
     public void evaluate(String student){
         Random rand = new Random();
         int randomScore = rand.nextInt(2,5);
-        String estimation = "";
+        String evaluation = "";
 
         switch (randomScore){
-            case 2 -> estimation = "неудовлетворительно";
-            case 3 -> estimation = "удовлетворительно";
-            case 4 -> estimation = "хорошо";
-            case 5 -> estimation = "отлично";
+            case 2 -> evaluation = "неудовлетворительно";
+            case 3 -> evaluation = "удовлетворительно";
+            case 4 -> evaluation = "хорошо";
+            case 5 -> evaluation = "отлично";
         }
-
 
         System.out.printf(
                 "Преподаватель %s оценил студента с именем %s по предмету %s на оценку %s.",
-                this.name, student, this.subject, estimation
+                this.name, student, this.subject, evaluation
         );
     }
 }

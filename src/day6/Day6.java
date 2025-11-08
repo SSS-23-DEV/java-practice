@@ -2,24 +2,37 @@ package day6;
 
 public class Day6 {
     public static void main(String[] args) {
-//        Airplane plane = new Airplane("Air Astana", 2019, 200, 1000);
+//        Airplane airplane = new Airplane("Air Astana", 2010, 30, 40000);
 //
-//        plane.info();
+//        airplane.info();
 //
-//        plane.setYear(2030);
-//        plane.setLength(250);
+//        airplane.setYear(2015);
+//        airplane.setLength(35);
 //
-//        plane.info();
+//        airplane.info();
 //
-//        System.out.println("Fuel: "+  plane.getFuel());
-//        plane.fillUp(20);
-//        System.out.println("Fuel: "+  plane.getFuel());
-//        plane.fillUp(30);
-//        System.out.println("Fuel: "+  plane.getFuel());
+//        System.out.println("Fuel: "+  airplane.getFuel());
+//        airplane.fillUp(2000);
 //
-//        plane.info();
+//        System.out.println("Fuel: "+  airplane.getFuel());
+//        airplane.fillUp(3000);
+//
+//        System.out.println("Fuel: "+  airplane.getFuel());
+//
+//        airplane.info();
 
-
+//
+//        Car car = new Car();
+//        car.setYear(2018);
+//        car.info();
+//        System.out.println(car.yearDifference(2020));
+//
+//        Motorbike bike = new Motorbike(2020, "black", "yamaha");
+//        bike.info();
+//        System.out.println(bike.yearDifference(2025));
+//
+//
+//
         Teacher teacher = new Teacher("Sagyndyk", "IT");
 
         System.out.println(teacher.getName());

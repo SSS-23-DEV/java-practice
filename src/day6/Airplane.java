@@ -1,11 +1,11 @@
 package day6;
 
 public class Airplane {
-    String producer;
+    private String producer;
     private int year;
     private int length;
-    int weight;
-    int fuel;
+    private int weight;
+    private int fuel;
 
     Airplane(String producer, int year, int length, int weight) {
         this.producer = producer;
@@ -15,20 +15,40 @@ public class Airplane {
         this.fuel = 0;
     }
 
-    public void fillUp(int fuels){
-        this.fuel += fuels;
+    public String getProducer() {
+        return producer;
     }
 
-    public int getFuel(){
-        return this.fuel;
+    public void setProducer(String producer) {
+        this.producer = producer;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     public void setYear(int year){
         this.year = year;
     }
 
+    public int getLength() {
+        return length;
+    }
+
     public void setLength(int length){
         this.length = length;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public void setFuel(int fuel) {
+        this.fuel = fuel;
     }
 
     public void info(){
@@ -36,5 +56,13 @@ public class Airplane {
                 "Изготовитель: %s, год выпуска: %d, длина: %d, вес: %d, количество топлива в баке: %d\n",
                 producer, year, length, weight, fuel
         );
+    }
+
+    public void fillUp(int inputFuel){
+        this.fuel += inputFuel;
+    }
+
+    public int getFuel(){
+        return this.fuel;
     }
 }
